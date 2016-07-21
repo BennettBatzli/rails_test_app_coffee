@@ -28,7 +28,7 @@ class DrinksController < ApplicationController
 
     respond_to do |format|
       if @drink.save
-        format.html { redirect_to @drink, notice: 'Drink was successfully created.' }
+        format.html { redirect_to @drink, notice: 'Drink was successfully created. Yahoo!!' }
         format.json { render :show, status: :created, location: @drink }
       else
         format.html { render :new }
